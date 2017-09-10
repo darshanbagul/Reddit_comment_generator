@@ -23,3 +23,9 @@ How do GRUs differ from LSTMs?
 GRUs have fewer parameters as U and W weight matrices are smaller; which can contribute to bit faster training times as well as requiring less data for generalization. On the other hand, if you have enough data, the greater expressive power of LSTMs may lead to better results.
 
 In many tasks both architectures yield comparable performance and tuning hyperparameters like layer size is probably more important than picking the ideal architecture. Hence there is no clear winner, as stated by the empirical evaluations in [Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling](https://arxiv.org/abs/1412.3555)  and [An Empirical Exploration of Recurrent Network Architectures](http://proceedings.mlr.press/v37/jozefowicz15.pdf)
+
+
+## Credits
+
+1. [Christopher Olah's blog](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) - Great explanation of RNNs and LSTMs
+2. [Wild ML blog](http://www.wildml.com/2015/10/recurrent-neural-network-tutorial-part-4-implementing-a-grulstm-rnn-with-python-and-theano/) by Denny Britz- Excellent explanation of GRUs along with a hands-on practical
