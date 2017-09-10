@@ -6,14 +6,13 @@ In this project, I have implemented a Gated Recurrent Unit (GRU) RNN using thean
 
 Gated Recurrent Units are a variant of Recurrent Neural Network which were developed with an idea quite similar to LSTM Networks - solve the vanishing gradient problem and help RNNs learn representations across multiple time slices. A GRU has two gates, a reset gate r, and an update gate z.  Intuitively, the reset gate determines how to combine the new input with the previous memory, and the update gate defines how much of the previous memory to keep around. If we set the reset to all 1’s and  update gate to all 0’s we again arrive at our plain RNN model. Below are the equations: 
 
-          z(t) = σ(x(t) * Uz + s(t-1) * Wz)
-          r(t) = σ(x(t) * Ur + s(t-1) * Wr)
-          h(t) = tanh(x(t) * Uh + (s(t-1) .* r) * Wh)
-          s(t) = (1-z) .* h + z .* s(t-1)
+ ![Image](https://github.com/darshanbagul/Reddit_comment_generator/blob/master/images/GRU.png)
           
 The basic idea of using a gating mechanism to learn long-term dependencies by countering the vanishing/exploding gradients.
 
 ## GRU vs LSTMs
+
+![Image](https://github.com/darshanbagul/Reddit_comment_generator/blob/master/images/gru_vs_lstm.jpg)
 
 How do GRUs differ from LSTMs?
   1. A GRU cell has 2 gates, whereas an LSTM cell has 3 gates.
